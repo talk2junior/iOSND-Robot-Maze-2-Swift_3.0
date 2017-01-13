@@ -11,7 +11,6 @@ import Foundation
 extension ControlCenter {
     
     func isFacingWall(_ robot: ComplexRobotObject, direction: MazeDirection) -> Bool {
-        
         let cell = mazeController.currentCell(robot)
         var isWall: Bool = false
         
@@ -22,30 +21,30 @@ extension ControlCenter {
 
         // Step 1.1a
         // TODO: Write a switch statement handling all possible values of direction. The first case has been done for you. Uncomment the code and add the remaining cases!
-                switch(direction) {
-                case .up:
-                    if cell.top {
-                        isWall = true
-                   }
-                case .down:
-                    if cell.bottom {
-                        isWall = true
-                    }
-                case .left:
-                    if cell.left {
-                        isWall = true
-                    }
-                case .right:
-                    if cell.right {
-                        isWall = true
-                    }
-                }
+        switch(direction) {
+        case .up:
+            if cell.top {
+                isWall = true
+            }
+        case .down:
+            if cell.bottom {
+                isWall = true
+            }
+        case .left:
+            if cell.left {
+                isWall = true
+            }
+        case .right:
+            if cell.right {
+                isWall = true
+            }
+        default:
+            isWall = false
+        }
         
         // Step 1.1b
         // TODO: Return a Bool that represents whether the robot is currently facing a wall. You will need to change the placeholder return statement below.
         
-        
-        // Placeholder
         return false
     }
 }
