@@ -15,8 +15,8 @@ class ControlCenter {
         
         // Step 1.1c
         // TODO: Call the function, isFacingWall(), and define a constant to be equal to its return value. You can use the suggested constant name below--uncomment the code and add the function call.
-        func isFacingWall(robot: ComplexRobotObject, direction: <#T##MazeDirection#>) {
-            let robotIsBlocked = isFacingWall(myRobot, direction: myRobot.direction)
+        func isFacingWall(robot: ComplexRobotObject, direction: MazeDirection) {
+            let robotIsBlocked = isFacingWall(robot: myRobot, direction: myRobot.direction)
         }
         
         // Step 1.1d

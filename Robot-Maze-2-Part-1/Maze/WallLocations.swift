@@ -38,13 +38,11 @@ extension ControlCenter {
             if cell.right {
                 isWall = true
             }
-        default:
-            isWall = false
-        }
         
         // Step 1.1b
         // TODO: Return a Bool that represents whether the robot is currently facing a wall. You will need to change the placeholder return statement below.
-        
-        return false
+        default:
+            isWall = false
+        }
     }
 }
